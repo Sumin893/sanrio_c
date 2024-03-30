@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 8px 12px;
+}
+
+.nav_logo {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.home_logo {
+  width: 100px;
+  height: 100px;
+}
+
+
+.navbar_menu{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_menu li {
+  padding: 8px 30px;
+}
+ /* 이거 쓰니까 company,character,place,recruit 얘네가 따닥따닥 붙어 있다가 떨어짐! */
+
+/* 
+.main_picture {
+  position: absolute;
+  width: 100%;
+  /* background-size: cover;
+  background-position: 0;
+  position: absolute;
+  overflow: hidden; */
+/* } */ */
+
+.containor {
+  margin: 0 auto;
+}
+
+.character_title {
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button {
+  display: block;
+  width: 170px;
+  margin: 0 auto;
+  border: solid 1px #222;
+  border-radius: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  /* padding을 주니까 버튼이 좀 넓어짐 */
+}
+button:hover {
+  background: rgba(0,0,0,1);
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.character {
+  list-style: none;
+  display: flex;
+}
+
+.character_pic {
+  cursor: pointer;
+}
+
+.pic 
+/* 사이즈 정하기 (사진) */
+
+.character_description
+
+.name {
+  font-size: 24px;
+  color: #444;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+.name_eng {
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
