@@ -12,6 +12,13 @@ a {
   text-decoration: none;
 }
 
+header {
+  padding-left: 0px;
+  padding-right: 0px;
+  position: sticky;
+  top: 0;
+}
+
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -25,6 +32,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
+  width: 30%;
 }
 
 .home_logo {
@@ -37,28 +45,33 @@ a {
   list-style: none;
   display: flex;
   margin: 0;
-  padding-left: 0;
+  font-weight: bold;
+  padding: 0;
   justify-content: space-between;
   align-items: center;
 }
 
 .navbar_menu li {
+  display: inline-block;
   padding: 8px 30px;
 }
  /* 이거 쓰니까 company,character,place,recruit 얘네가 따닥따닥 붙어 있다가 떨어짐! */
 
-/* 
+
 .main_picture {
-  position: absolute;
+  position: static;
   width: 100%;
-  /* background-size: cover;
+  height: auto;
+  /* width100%, height auto하니까 화면에 딱맞춰서 사진 들어감! */
+  background-size: cover;
   background-position: 0;
-  position: absolute;
-  overflow: hidden; */
-/* } */ */
+  overflow: hidden;
+}
 
 .containor {
-  margin: 0 auto;
+  margin: 0px 0px 20px;
+  font-size: 32.62px;
+  font-weight: bold;
 }
 
 .character_title {
@@ -96,9 +109,23 @@ button:hover {
 
 .character_pic {
   cursor: pointer;
+  display: inline-block;
+  position: relative;
+  height: 0;
+  width: calc(20% - 10px);
+  margin: 0 5px 10px;
+  padding-top: calc(20% - 10px);
 }
 
-.pic 
+character_pic:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.pic {
+  border-radius: 20px;
+    overflow: hidden;
+}
 /* 사이즈 정하기 (사진) */
 
 .character_description
@@ -115,4 +142,8 @@ button:hover {
   font-size: 12px;
   text-align: center;
   text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
 }
