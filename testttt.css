@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Montserrat", "Nanum Gothic", sans-serif;
+  font-family: "Montserrat" "Nanum Gothic", sans-serif;
 }
 
 body {
@@ -13,6 +13,8 @@ a {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
   padding-left: 0px;
   padding-right: 0px;
   position: sticky;
@@ -24,7 +26,6 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 20px 50px;
 }
 
 .nav_logo {
@@ -59,14 +60,14 @@ header {
   width: 100%;
   height: auto;
   /* width100%, height auto하니까 화면에 딱맞춰서 사진 들어감! */
-  margin: 0px 0px 85px 0px;
+  margin: 85px 0px;
   background-size: cover;
   background-position: 0;
   overflow: hidden;
 }
-
+/* 
 .containor {
-  margin: 0px 0px 30px;
+  margin: 0px 0px 20px;
   font-size: 32.62px;
   font-weight: bold;
 }
@@ -76,12 +77,13 @@ header {
   text-align: center;
   text-transform: uppercase;
   margin: 0px 0px 30px;
-}
+} */
 
 button {
   display: block;
   width: 170px;
-  margin: 0 auto 50px;
+  margin: 0px 600px;
+  padding: 16px 0px;
   border: solid 1px #222;
   border-radius: 30px;
   text-align: center;
@@ -89,7 +91,6 @@ button {
   cursor: pointer;
   background-color: white;
   color: black;
-  padding: 16px 0px;
   /* padding을 주니까 버튼이 좀 넓어짐 */
 }
 button:hover {
@@ -97,6 +98,8 @@ button:hover {
   color: white;
   cursor: pointer;
 }
+
+
 
 .character {
   list-style: none;
@@ -107,17 +110,19 @@ button:hover {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  width: calc(50% - 20px);
+  width: calc(25% - 20px);
   height: 0;
+  /* width: calc(20% - 10px);
+  margin: 0 5px 10px;
+  padding-top: calc(20% - 10px); */
 }
 
-character_pic:hover {
+.character_pic:hover {
   cursor: pointer;
   color: white;
 }
 
 .pic {
-  border-radius: 20px;
   overflow: hidden;
   position: relative;
 }
@@ -130,24 +135,20 @@ character_pic:hover {
   display: block;
 }
 
-.character_description {
-  padding: 15px 10px;
-}
+.character_description
 
 .name {
   font-size: 24px;
   color: #444;
+  box-sizing: border-box;
   text-align: center;
-  margin: 0;
-
+  margin: 50px 10px;
 }
-
 
 .name_eng {
   font-size: 12px;
   text-align: center;
   text-transform: uppercase;
-  margin: auto;
 }
 
 img {
