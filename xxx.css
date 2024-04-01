@@ -4,7 +4,7 @@
 }
 
 body {
-  /* margin: 0; */
+  margin: 0;
   background-color: white;
 }
 
@@ -17,7 +17,6 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
-  background-color: #fff;
 }
 
 .navbar{
@@ -25,11 +24,16 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 0px 50px;
+  padding: 20px 50px;
 }
 
 .nav_logo {
   position: relative;
+}
+
+.home_logo {
+  width: 100px;
+  height: 100px;
 }
 
 .navbar_menu{
@@ -45,17 +49,16 @@ header {
 .navbar_menu li {
   display: inline-block;
   padding: 8px 30px;
-  color: #222;
 }
+ /* 이거 쓰니까 company,character,place,recruit 얘네가 따닥따닥 붙어 있다가 떨어짐! */
 
-/* .goto_logo {
+.goto_logo {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-} */
+}
 
 .main_picture {
-  display: inline-block;
   position: static;
   width: 100%;
   height: auto;
@@ -99,29 +102,45 @@ button:hover {
   cursor: pointer;
 }
 
+
+.character_box {
+  padding: 0px 50px 0px 20px;
+}
+
 .character {
+  list-style: none;
+  display: flex;
+}
+
+.character_pic {
   cursor: pointer;
   display: inline-block;
   position: relative;
+  width: calc(50% - 20px);
+  height: 0;
 }
 
-character:hover {
+character_pic:hover {
   cursor: pointer;
   color: white;
 }
 
-.character_box {
-  border: 2px solid #eee;
-  border-radius: 5%;
-  display: inline-block;
-  position: relative;
+.pic {
+  border-radius: 20px;
   overflow: hidden;
+  position: relative;
+}
+/* 사이즈 정하기 (사진) */
+
+.pic_box {
+  border: 2px solid #eee;
+  border-radius: 20px;
+  position: relative;
+  display: block;
 }
 
-.pic {
-  display: inline-block;
-  margin: 0 auto;
-  width: calc(50% - 50px);
+.character_description {
+  padding: 15px 10px;
 }
 
 .name {
@@ -129,13 +148,17 @@ character:hover {
   color: #444;
   text-align: center;
   margin: 0;
+
 }
 
 .name_eng {
   font-size: 12px;
-  color: lightgray;
-  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   margin: auto;
 }
+
+img {
+  max-width: 100%;
+}
+
